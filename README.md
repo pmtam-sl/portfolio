@@ -19,7 +19,7 @@ Acquire knowledge and skills on Data Analytics and Data Science from LinkedIn Le
 - <b>Machine Learning with R Programing, Python Programing</b>
   - [Policy Lapse Prediction](http://rpubs.com/pmtam/LapsePrediction_Tidymodels)
   - [Customer Churn Prediction](http://rpubs.com/pmtam/CustomerChurn)
-  - [Employee Attrition Prediction]()
+  - [Employee Attrition Prediction]
 
 
 <h2>📆 <a id="pm">Project Management and PMO works</a> </h2>
@@ -41,9 +41,9 @@ Acquire knowledge and skills on Data Analytics and Data Science from LinkedIn Le
 
 - [Google Advanced Data Analytics](https://www.coursera.org/account/accomplishments/specialization/certificate/YD6LW3DY2HXB)
 - [Google Data Analytics](https://www.coursera.org/account/accomplishments/specialization/certificate/H7CEHDTB85ZJ)
-- [Develop Your SPSS Skills](https://www.linkedin.com/learning/certificates/2f8884025cbba9abe67dc9ca040653047abd12dd99f8d9e67d97038b0af55538)
-- [Become a Business Analytics Expert](https://www.linkedin.com/learning/certificates/9bffd31a53aa303707b072c6dadaaa4a85c8c9b5d5144cee8978607403f2408a?trk=backfilled_certificate)
-- [Master R for Data Science](https://www.linkedin.com/learning/certificates/95b2e92936858d5c9665a7cbe3d79c39b1859cb2e3d8cd2e3a1f23c5249c3e72)
+- [Develop Your SPSS Skills@LinkedIn](https://www.linkedin.com/learning/certificates/2f8884025cbba9abe67dc9ca040653047abd12dd99f8d9e67d97038b0af55538)
+- [Become a Business Analytics Expert@LinkedIn](https://www.linkedin.com/learning/certificates/9bffd31a53aa303707b072c6dadaaa4a85c8c9b5d5144cee8978607403f2408a?trk=backfilled_certificate)
+- [Master R for Data Science@LinkedIn](https://www.linkedin.com/learning/certificates/95b2e92936858d5c9665a7cbe3d79c39b1859cb2e3d8cd2e3a1f23c5249c3e72)
 
 <h2> 🤳 Connect with me:</h2>
 
