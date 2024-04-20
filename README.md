@@ -19,7 +19,7 @@ Acquire knowledge and skills in Data Analytics and Data Science from LinkedIn Le
 - <b>Machine Learning with R Programing, Python Programing</b>
   - [Policy Lapse Prediction](http://rpubs.com/pmtam/LapsePrediction_Tidymodels)
   - [Customer Churn Prediction](http://rpubs.com/pmtam/CustomerChurn)
-  - [Employee Attrition Prediction]
+  - Employee Attrition Prediction
 
 <h2>📆 <a id="pm">Project Management and PMO works</a> </h2>
 
