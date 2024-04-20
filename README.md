@@ -3,24 +3,23 @@
 
 <h2>👨‍💻 Transitioning to Business Analytics:</h2>
 
-Acquire knowledge and skills on Data Analytics and Data Science from LinkedIn Learning and Coursera. Key achievements:
+Acquire knowledge and skills in Data Analytics and Data Science from LinkedIn Learning and Coursera. Key achievements:
 
 - <b>[Operational Excellence](https://1drv.ms/b/s!AiFHj1NlEbBbgZkF-UTsX-Fqd3JtZA)</b>
 - <b>Statistical Analytics:</b>
   - [Inferential Statistics](https://1drv.ms/b/s!AiFHj1NlEbBbgZkOAeQ2dSp-JNHugg)
   - [Fraud Detection – estimating ROI with ML](https://1drv.ms/b/s!AiFHj1NlEbBbgaR1J461XRn9yRNlzA?e=7g7g6k)
-- <b>Data Visualization projects (in Tableau)</b>
+- <b>Data Visualization projects (using Tableau)</b>
   - [Vietnam Insurance Market Overview](https://public.tableau.com/views/QuickViewSep2020/QuickViewDB?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
   - [Executive Committee Dashboard](https://public.tableau.com/views/EXCO5/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
   - [Agency Sales Dashboard](https://public.tableau.com/views/SalesDashboard_16279817899830/AgencySales?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link) 
-- <b>EDA and PRA presentation with SPSS</b>
+- <b>Exploratory Data Analysis (EDA) and Predictive Risk Analytics (PRA) presentation with SPSS</b>
   - [Policy Lapse Prediction](https://1drv.ms/b/s!AiFHj1NlEbBbgZta2c9lDPY3A04NaQ?e=n9G0Bk)
   - [Telco Customer Churn Prediction](https://1drv.ms/b/s!AiFHj1NlEbBbgZtWT1-DpNOUhv3znQ?e=rDgzCg)
 - <b>Machine Learning with R Programing, Python Programing</b>
   - [Policy Lapse Prediction](http://rpubs.com/pmtam/LapsePrediction_Tidymodels)
   - [Customer Churn Prediction](http://rpubs.com/pmtam/CustomerChurn)
   - [Employee Attrition Prediction]
-
 
 <h2>📆 <a id="pm">Project Management and PMO works</a> </h2>
 
