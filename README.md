@@ -1,5 +1,5 @@
-<h1>Hi, I'm Tam Pham! 
-<br/><a href="#pm">Project Management</a>, <a href="https://www.linkedin.com/in/pmtam/">Business Analytics</a> </h1>
+<h1>Hi, I'm Tam Pham! </h1>
+<!--<br/><a href="#pm">Project Management</a>, <a href="https://www.linkedin.com/in/pmtam/">Business Analytics</a> -->
 
 <h2>👨‍💻 Transitioning to Business Analytics:</h2>
 
