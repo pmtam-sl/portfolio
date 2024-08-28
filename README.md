@@ -1,6 +1,6 @@
-<h2>Data Science porfolio of Tam Pham 🏠 </h2>
+<h2>Data Science portfolio of Tam Pham 🏠 </h2>
 
-👏 Hello ! Thank you for visiting [my Data Science Portfolio](aaa) website 👏
+👏 Hello ! Thank you for visiting my [Data Science Portfolio](https://pmtam-sl.rbind.io) website 👏
 
 As I am in transition to Busness Analytics, this portfolio is summary of my journey in exploring Data analytics and Data Science.
 
