@@ -1,11 +1,10 @@
-<h2>Data Science porfolio website of Tam Pham 🏠 </h2>
+<h2>Data Science porfolio of Tam Pham 🏠 </h2>
 
-- 👏 Hello ! Thank you for visiting [my Data Science Portfolio](aaa) website 👏
+👏 Hello ! Thank you for visiting [my Data Science Portfolio](aaa) website 👏
 
-- As I am in transition to Busness Analytics, this portfolio is summary of my journey in exploring Data analytics and Data Science.
+As I am in transition to Busness Analytics, this portfolio is summary of my journey in exploring Data analytics and Data Science.
 
-- This version was made using HTML v5 & CSS from [Boostrap](https://getbootstrap.com).
-
+This version was made using HTML v5 & CSS from [Boostrap](https://getbootstrap.com/) .
 
 
 <h3> 🤳 Connect with me:</h3>
