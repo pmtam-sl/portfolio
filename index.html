@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .profile-pic {
+            max-width: 75%;
+            margin-left: 15%;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .timeline-item {
+            text-align: center;
+        }
+        .timeline-item h6 {
+            margin-bottom: 5px;
+        }
+        .timeline-item p {
+            font-size: 0.9rem;
+        }
+
+         /* Additional CSS for Projects Section */
+         .projects-section h2 {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        .card {
+            margin-bottom: 30px;
+        }
+        .card-img-top {
+            object-fit: cover;
+            height: 200px; /* Adjust this value to fit the image properly in the card */
+            width: 100%; /* Ensure the image takes up the full width of the card */
+        }
+        
+        /* Additional CSS for Skills Section */
+        .skills-section {
+          padding: 50px 0;
+          background-color: #f8f9fa; /* Light background color */
+          border: 1px solid #dee2e6; /* Border for the section */
+        }
+        .skills-section .nav-tabs .nav-link {
+            font-size: 1.25rem; /* Increase font size for tab labels */
+            text-align: center;
+            color: #343a40; /* Dark gray text color */
+        }
+        .skills-section .nav-tabs .nav-link.active {
+            background-color: #fff; /* White background for active tab */
+            border-color: #dee2e6 #dee2e6 #fff; /* Border color for active tab */
+            color: #000; /* Black text color for active tab */
+        }
+
+        .skills-section .tab-pane {
+            padding: 20px;
+            border-top: 1px solid #dee2e6; /* Border at the top of the content */
+        }
+
+        .skills-section img.img-fluid {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .skills-section p {
+            font-size: 1rem; /* Regular text size */
+            color: #343a40; /* Dark gray text color */
+            margin-bottom: 15px;
+        }
+
+        .skills-section .rating {
+          color: #f39c12; /* Gold color for stars */
+          font-size: 1.5rem; /* Increase font size for stars */
+          margin-bottom: 15px;
+        }
+
+        .skills-section .link-primary {
+            color: #007bff; /* Bootstrap's primary link color */
+            font-weight: bold;
+        }
+
+        .skills-section .link-primary:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+        .nav-link img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        /* Additional CSS for Contact Section */
+        .contact-section {
+            padding: 50px 0;
+        }
+        /*
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        */
+        .contact-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .social-icon {
+            width: 50px; /* Size of your icons */
+            margin-bottom: 10px;
+        }
+        /* Hover effect for icons */
+        .social-icon:hover {
+            opacity: 0.7;
+        }
+        /* Style for links in the Contact section */
+        .contact-section a {
+            color: #4d2d2d;
+            text-decoration: none; /* Removes underline from links */
+            display: inline-block; /* Allows for margin on the bottom */
+            margin-bottom: 10px;
+        }
+        .contact-section a:hover {
+            color: #dedddb; /* Color when hovering over the link */
+        }
+
+        /* Additional CSS for Navigation Bar */
+        body {
+            position: relative;
+        }       
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0px 4px 2px -2px gray;
+        }
+        .navbar-nav a {
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .navbar-nav a:hover {
+            color: #555;
+        }
+        .navbar-brand {
+            color: #333;
+            font-weight: bold;
+        }
+        .navbar-brand:hover {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Tam Pham</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!--  
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#presentations">Presentations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Start of About Section-->
+<section id='about' class="about-section">
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="assets/img/about/2.jpg" alt="Profile Picture" class="img-fluid profile-pic">
+        </div>
+        <div class="col-md-9">
+            <h2>Hi, I'm Tam.</h2>
+            <p>With years of experience in Business Analysis and Project Management, I am now eager to embark on a new journey in Data Analytics. I aim to leverage my expertise in both business and data analytics to uncover insightful data stories that support stakeholders in making informed decisions.</p>
+            <p>I have been actively exploring Data Analytics and Data Science through LinkedIn Learning, Coursera, and various online resources. This learning journey has equipped me with:</p>
+            <ul>
+                <li><strong>General Skills:</strong> Statistical Analysis, Data Visualization, Data Preparation, Exploratory Data Analysis (EDA), Predictive Analytics (PRA), and Machine Learning.</li>
+                <li><strong>Technical Skills:</strong> Proficiency in IBM SPSS, R Programming, Python, and Tableau.</li>
+                <li><strong>Machine Learning Algorithms:</strong> Knowledge of Linear Regression, Logistic Regression, Decision Trees, Random Forest, XGBoost, SVM, k-NN, and K-means Clustering.</li>
+            </ul>
+            <p>This portfolio showcases my achievements and capabilities as I transition into a Business Analytics professional.</p>
+            <p>I am excited about the opportunity to work in Data Analytics and look forward to contributing to this dynamic field.</p>            
+            <div class="mt-4">
+                <a href="https://public.tableau.com/app/profile/tam.pham5379/viz/PMT_Profile/Profile" class="btn btn-outline-secondary" target="_blank">Tableau</a>
+                <a href="https://www.linkedin.com/in/PMTam/" class="btn btn-outline-secondary" target="_blank">LinkedIn</a>
+                <a href="#" class="btn btn-outline-secondary">GitHub</a>
+            </div>
+        </div>   
+    </div>
+    <!-- Working timeline-->
+    <div class="row hide-if-small-screen" style="padding-top: 5%">
+        <div class="col-lg-12 text-center">
+          <svg width="1000" height="100">
+            <line x1="0" y1="50" x2="1000" y2="50" style="stroke:black; stroke-width:1.5" />
+
+            <circle cx="220" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+            <text text-anchor="middle" x="220" y="80" fill="black">2009</text>
+            <text font-size="13" text-anchor="middle" x="70" y="30" fill="black">Manager, Consultant</text>
+            <text style="font-style: italic" font-size="13" text-anchor="middle" x="90" y="80" fill="#808080">AA, KMPG and EY Vietnam</text>
+
+            <circle cx="450" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+            <text text-anchor="middle" x="450" y="80" fill="black">2014</text>
+            <text font-size="13" text-anchor="middle" x="320" y="30" fill="black">Head of IT PMO</text>
+            <text style="font-style: italic" font-size="13" text-anchor="middle" x="320" y="80" fill="#808080">Prudential Assurance</text>
+
+            <circle cx="650" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+            <text text-anchor="middle" x="650" y="80" fill="black">2016</text>
+            <text font-size="13" text-anchor="middle" x="550" y="30" fill="black">Head of Delivery & IT Risk</text>
+            <text style="font-style: italic" font-size="13" text-anchor="middle" x="550" y="80" fill="#808080">DMSPro </text>
+
+            <circle cx="850" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+            <text text-anchor="middle" x="850" y="80" fill="black">2020</text>
+            <text font-size="13" text-anchor="middle" x="750" y="30" fill="black">Head of PMO</text>
+            <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="80" fill="#808080">Sun Life VN</text>
+
+            <text font-size="13" text-anchor="middle" x="930" y="30" fill="black">Transitioning Data Analytics</text>
+            <text style="font-style: italic" font-size="13" text-anchor="middle" x="930" y="80" fill="#808080">Consultant</text>
+
+          </svg>
+        </div>
+      </div>
+</div>
+</section>
+
+<!-- End of About Section -->
+
+<!-- Start of Projects Section -->
+<section id="projects" class="projects-section bg-light">
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/img/projects/Insurance_Policy_Lapse_Prediction.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Insurance Policy Lapse Prediction</h5>
+                    <p class="card-text text-center">This project aims to predict the likelihood of insurance policy lapses based on Policy information, Customer demography.
+                    The analysis is conducted using Logistic Regression in <b>SPSS</b> and Tree-based methods from Tidymodels framework in <b>R</b>.</p>
+                    <p class="text-center font-weight-bold"><a href="docs/presentations/Policy_Lapse_Prediction.pdf">Presentation</a> | <a href="https://rpubs.com/pmtam/LapsePrediction_Tidymodels">Blog Post</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/img/projects/2.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Customer Churn Prediction</h5>
+                    <p class="card-text text-center">This project aims to predict customer churn using Decision Tree in <b>SPSS</b> and classification algorithms from Tidymodels in <b>R</b>. The goal is to identify customers who are likely to leave the service and understand the factors contributing to churn.</p>
+                    <p class="text-center font-weight-bold"><a href="docs/presentations/Telco_Customer_Churn_Prediction.pdf">Presentation</a> | <a href="https://rpubs.com/pmtam/CustomerChurn">Blog Post</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/img/projects/Employee_attrition.jpg" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Employee Attrition Prediction</h5>
+                    <p class="card-text text-center">This project utilizes Logistic Regression and Tree-based models in <b>Python</b> to predict employee attrition.
+                         It includes Exploratory Data Analysis, Predictive Analysis, and offers recommendations for improving employee retention.</p>
+                    <p class="text-center font-weight-bold"><a href="docs/presentations/Employee_Attrition_Prediction.pdf">Presentation</a> | <a href="https://pmtam.quarto.pub/employee-attrition-prediction/">Blog Post</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="assets/img/projects/Customer_segementation.jpg" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Customer Segementation</h5>
+                    <p class="card-text text-center">This project leverages K-means clustering in <b>Python</b> to segment customers based on behavior and characteristics. 
+                        The goal is to identify distinct customer groups for more effective targeted marketing strategies.</p>
+                    <p class="text-center font-weight-bold"><a href="https://pmtam.quarto.pub/customer-segmentation-with-python/">Blog Post</a> | <a href="#">Source Code</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- End of Projects Section -->
+
+<!-- Start of Presentation Section -->
+<section id="presentations" class="presentation-section bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Presentations</h2>
+        <div class="row">
+            <!-- Presentation 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="docs/presentations/Operation Excellence.pdf" class="card-img-top" alt="Presentation 1">
+                    <div class="card-body">
+                        <!---h5 class="card-title text-center">Operational Excellence</h5--->
+                        <p class="card-text text-center">Operational Excellence (OpEx) is a philosophy centered on the continuous improvement of business processes to enhance efficiency, quality, and customer satisfaction.
+                            It involves the systematic use of methodologies, tools, and principles to streamline operations, reduce waste, and enhance productivity.
+                        </p>
+                        <p class="card-text text-center">Let's dive into OpEx as the starting point of our Business Analytics journey!</p>
+                        <p class="text-center font-weight-bold"><a href="docs/presentations/Operation Excellence.pdf">Presentation</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Preesentation 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="docs/presentations/Inferential_Analysis.pdf" class="card-img-top" alt="Presentation 2">
+                    <div class="card-body">
+                        <!---h5 class="card-title text-center">Inferential Analysis </h5 -->
+                        <p class="card-text text-center">Inferential analysis is a Statistical approach, used to make predictions or draw conclusions about a larger population based on a sample data.</p>
+                        <p class="card-text text-center">It involves techniques like hypothesis testing, confidence intervals and regression analysis to determine how likely it is that observed patterns in the sample reflect true characteristics of the population.</p>
+                        <p class="text-center font-weight-bold"><a href="docs/presentations/Inferential_Analysis.pdf">Presentation</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Presentation 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="docs/presentations/Fraud_detection.pdf" class="card-img-top" alt="Presentation 3">
+                    <div class="card-body">
+                        <!---h5 class="card-title text-center">Fraud_detection</h5 --->
+                        <p class="card-text text-center">As the number of insurance claims rises, businesses face increased challenges in identifying fraudulent claims.</p>
+                        <p class="card-text text-center">Machine Learning offers a solution by improving fraud classification, guiding which claims to investigate. 
+                            This approach enhances detection accuracy and reduces costs, boosting return on investment (ROI) through fewer unnecessary investigations and lower litigation expenses.</p>
+                        <p class="text-center font-weight-bold"><a href="docs/presentations/Fraud_detection.pdf">Presentation</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Presentation Section -->
+
+<!-- Start of Skills Section -->
+
+<section id="skills" class="skills-section bg-light" >
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Skills</h2>
+            <!-- Tabs nav-->
+            <ul class="nav nav-tabs d-flex justify-content-between" id="skillsTab" role="tablist">
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link active" id="python-tab" data-toggle="tab" href="#python" role="tab" aria-controls="python" aria-selected="true">
+                        <img src="assets/img/skills/python.png" alt="Python"> Python
+                    </a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" id="tableau-tab" data-toggle="tab" href="#tableau" role="tab" aria-controls="tableau" aria-selected="false">
+                        <img src="assets/img/skills/tableau.png" alt="Tableau"> Tableau
+                    </a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" id="r-tab" data-toggle="tab" href="#r" role="tab" aria-controls="r" aria-selected="false">
+                        <img src="assets/img/skills/r.png" alt="R"> R
+                    </a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" id="spss-tab" data-toggle="tab" href="#spss" role="tab" aria-controls="spss" aria-selected="false">
+                        <img src="assets/img/skills/spss.png" alt="SPSS"> SPSS
+                    </a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" id="data-storytelling-tab" data-toggle="tab" href="#data-storytelling" role="tab" aria-controls="data-storytelling" aria-selected="false">
+                        <img src="assets/img/skills/storytelling.png" alt="Data Storytelling">Data Storytelling
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tabs content-->
+            <div class="tab-content" id="skillsTabContent">
+
+                <!-- Python Tab -->
+                <div class="tab-pane fade show active" id="python" role="tabpanel" aria-labelledby="python-tab">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <img src="assets/img/skills/python.png?v=1" alt="Python" class="img-fluid">
+                      </div>
+                      <div class="col-md-9">
+                          <p>Skilled in using popular Python libraries such as Pandas, NumPy, Seaborn and Matplotlib for efficient data manipulation and visualization.</p>
+                          <p>Developed predictive models and performing data clustering by leveraging Scikit-learn.</p>
+                          <p>Honed data analytics skills with Python through the Google Data Analytics Certificate, focusing on collecting, analyzing, and interpreting large datasets to drive data-driven decisions.</p>
+                          <p class="rating">
+                              ★★★☆☆
+                          </p>
+                          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/YD6LW3DY2HXB" class="link-primary">Link to course or certificate</a>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Tableau Tab -->
+                <div class="tab-pane fade" id="tableau" role="tabpanel" aria-labelledby="tableau-tab">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <img src="assets/img/skills/tableau.png" alt="Tableau" class="img-fluid">
+                      </div>
+                      <div class="col-md-9">
+                          <p>Improved Tableau skills in creating interactive and visually compelling dashboards to uncover insights from complex datasets.</p>
+                          <p>Skilled in designing dynamic visualizations that highlight key performance indicators (KPIs), trends, and patterns, aiding in data-driven decision-making.</p>
+                          <p> Sample Dashboards:                           
+                                <a href="https://public.tableau.com/app/profile/tam.pham5379/viz/QuickViewSep2020/QuickViewDB">Vietnam Insurance Market</a>
+                                | <a href="https://public.tableau.com/app/profile/tam.pham5379/viz/EXCO5/Dashboard1">Executive Dashboard</a>
+                                | <a href="https://public.tableau.com/app/profile/tam.pham5379/viz/SalesDashboard_16279817899830/AgencySales">Agency Sales Dashboard</a>
+                            </p>
+                          <p class="rating">
+                              ★★★☆☆
+                          </p>
+                          <a href="docs/certificates/CertificateOfCompletion_Improve_Your_Tableau_Skills.pdf" class="link-primary">Link to course or certificate</a>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- R Tab -->
+                <div class="tab-pane fade" id="r" role="tabpanel" aria-labelledby="r-tab">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="assets/img/skills/r.png" alt="R" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <p>Skilled in using R for statistical analysis, data manipulation, and visualization. Familiar working with libraries such as dplyr, ggplot2, tidyr and Tidymodels to efficiently process, analyze, and present data.</p>
+                            <p>Capable of applying R for machine learning algorithms, exploratory data analysis, and building reproducible reports, leveraging R Markdown for dynamic documents.</p>
+                            <p class="rating">
+                                ★★★☆☆
+                            </p>
+                            <a href="docs/certificates/CertificateOfCompletion_Master_R_for_DataScience.pdf" class="link-primary">Link to course or certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPSS Tab -->
+                <div class="tab-pane fade" id="spss" role="tabpanel" aria-labelledby="spss-tab">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="assets/img/skills/spss.png" alt="SPSS" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <p>Competent in using SPSS for statistical analysis, including data management, descriptive statistics, and basic inferential procedures</p>
+                            <p>Capable leveraging SPSS features and functions to analyze, interpret, and present data, facilitating accurate, data-driven decision-making</p>
+                            <p>Take a deep dive into using SPSS for Machine Learning and AI projects.</p>
+                            <p class="rating">
+                                ★★★☆☆
+                            </p>
+                            <a href="docs/certificates/CertificateOfCompletion_Develop_Your_SPSS_Skills.pdf" class="link-primary">Link to course or certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Storytelling Tab -->
+                <div class="tab-pane fade" id="data-storytelling" role="tabpanel" aria-labelledby="data-storytelling-tab">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="assets/img/skills/storytelling.png" alt="Data Storytelling" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <p><b>Data Analysis:</b> Skilled in breaking down complex datasets, identifying patterns, trends, and correlations to extract actionable insights.</p>
+                            <p><b>Visual Communication:</b> Capable in crafting compelling data narratives that clearly communicate insights and support decision-making.</p>
+                            <p>Applied <b>Business Analytics</b> skills to drive strategic decisions by translating data into impactful business stories, turning data insights into actionable strategies through clear and persuasive storytelling.</p>
+                            <p class="rating">
+                                ★★★★☆
+                            </p>            
+                                <a href="docs/certificates/CertificateOfCompletion_Become_a_Data_Analyst.pdf" class="link-primary">Data Analysis certificate</a>
+                                 | <a href="docs/certificates/CertificateOfCompletion_Advance_Your_Business_Analytics_Skills.pdf" class="link-primary">Business Analytics certificate</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+    </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+      <!--
+      <div class="row">
+        <div class="col-lg-6">
+          <p><i class="fas fa-envelope"></i> pmtam@yahoo.com</p>
+        </div>
+        <div class="col-lg-6">
+          <p><i class="fas fa-phone"></i> 0903-707394</p>
+        </div>
+        <div class="col-lg-6">
+          <p><i class="fas fa-phone"></i> 0903-707394</p>
+        </div>
+      </div>
+       -->
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-3 mb-4">
+          <a href="https://www.linkedin.com/in/pmtam/" target="_blank">
+            <img src="assets/icn/linkedin.png" alt="LinkedIn" class="social-icon">
+            LinkedIn
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 mb-4">
+          <a href="https://github.com/pmtam-sl" target="_blank">
+            <img src="assets/icn/github.png" alt="GitHub" class="social-icon">
+            GitHub
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 mb-4">
+            <a href="mailto:pmtam@yahoo.com">
+              <img src="assets/icn/email.png" alt="Email" class="social-icon">
+              Email Me
+            </a>
+          </div>
+        <div class="col-lg-3 col-md-3 mb-4">
+          <a href="docs/presentations/PMTAM_CV.pdf" target="_blank">
+            <img src="assets/icn/cv.png" alt="CV" class="social-icon">
+            My Resume
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap JavaScript Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybGphpt4/vh3YvLoD72PBmlSMCFFlXGhI0JD1vRa+PbbV+lb4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-QwwDz1ZZF4hHAqR5t6Reau3br13+6A2lWlCJg3EjdtEgLWzYZpXWgSOfj3kNFJFC" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!--- 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+-->
+
+</body>
+</html>
