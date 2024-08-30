@@ -1,6 +1,6 @@
 <h2> Tam Pham's Data Science portfolio 🏠 </h2>
 
-👏 <b>Welcome!</b> Thank you for visiting my [Data Science Portfolio](https://pmtam-sl.rbind.io). 👏
+👏 <b>Welcome!</b> Thank you for visiting my [Data Science Portfolio](https://pmtam-sl.github.io/portfolio). 👏
 
 As I transition into Business Analytics, this portfolio showcases my journey through the world of Data Analytics and Data Science.
 
